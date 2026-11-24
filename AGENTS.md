@@ -9,3 +9,4 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 - Site placeholders (Calendly, demo media, LinkedIn) and contact details live in src/lib/site-config.ts; unreplaced {{...}} values render safe fallback states.
+- All routes (`/`, `/privacy`, `/terms`) are statically prerendered to `dist/client` with a generated `404.html` fallback so the site deploys to GitHub Pages without a server runtime.
